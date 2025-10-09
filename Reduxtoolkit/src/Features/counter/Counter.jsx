@@ -15,40 +15,42 @@ export function Counter() {
 
   return (
     <div>
-      <div style={{ background: "white", border: "5px dotted red", width: "500px", height: "500px", display: "flex", flexDirection: "row", alignItems:"center", justifyContent: "center" }}>
+      <div style={{ background: "white", border: "5px dotted red", width: "500px", height: "500px", display: "flex", flexDirection: "row", alignItems: "center", justifyContent: "center" }}>
 
-        <div>  <div style={{ color: "white", background: "blue" }}>{count1}</div>
+        <div>  <div style={{ color: "white", background: "#9ddcdc" }}>{count1}</div>
           <div style={{ background: "white", border: "5px dotted red", }}>
-            <input
+            <div style={{display:"flex", flexDirection:"row"}}>   <input
               style={{
                 color: "black", background: "white", height:
-                  "30px", width: "120px", border: "5px dotted blue"
+                  "30px", width: "70px", border: "5px dotted blue"
               }}
               type="number" value={amount}
               onChange={(e) => {
                 setAmount(e.target.value)
               }}
               placeholder='enter a number'
-            /> <button style={{ color: "black", background: "" }}
-              aria-label="Increment value"
-              onClick={() => handlevaluebynumber()} >
-              Increment by input number
-            </button></div>
+            />
+              <button style={{ color: "black", background: "#b3e06bff" ,height:40, fontSize:"10px"}}
+                aria-label="Increment value"
+                onClick={() => handlevaluebynumber()} >
+                Increment by input number
+              </button>
+            </div>
+          </div>
 
-          <button style={{ color: "blue", background: "yellow" }}
+
+      <div><button style={{ color: "blue", background: "yellow" }}
             aria-label="Increment value"
             onClick={() => dispatch(colorchange())} >
             Increment by 10
-          </button>
-          <button style={{ color: "blue", background: "green" }}
-            aria-label="Decrement value"
-            onClick={() => dispatch(colordecrement())}
-          >
-            Decrement by 5
-          </button>
-
-        </div>
-
+          </button></div>
+        <button style={{ color: "blue", background: "green" }}
+          aria-label="Decrement value"
+          onClick={() => dispatch(colordecrement())}
+        >
+          Decrement by 5
+        </button>
+</div>
         <div>
 
           <div style={{ color: "white", background: "blue" }}>{count}</div>
