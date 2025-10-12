@@ -17,7 +17,7 @@ export function Counter() {
     <div>
       <div
         style={{
-          background: "white", border: "5px dotted red",
+          background: "white", border: "15px solid gray",
           width: "500px", height: "500px", display: "flex",
           flexDirection: "row", alignItems: "center", justifyContent: "center"
         }}>
@@ -26,11 +26,11 @@ export function Counter() {
           color: "white", background: "#9ddcdc",
           marginBottom: "50px"
         }}>{count1}</div>
-          <div style={{ background: "white", border: "5px dotted red", }}>
+          <div style={{ background: "white", border: "5px solid red", }}>
             <div style={{ display: "flex", flexDirection: "row" }}>   <input
               style={{
                 color: "black", background: "white", height:
-                  "30px", width: "70px", border: "5px dotted blue"
+                  "30px", width: "70px", border: "5px solid blue"
               }}
               type="number" value={amount}
               onChange={(e) => {
