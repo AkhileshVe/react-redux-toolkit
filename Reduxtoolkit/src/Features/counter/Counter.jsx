@@ -22,11 +22,11 @@ export function Counter() {
           flexDirection: "row", alignItems: "center", justifyContent: "center"
         }}>
 
-        <div style={{ border: "1px solid black" }}>  <div style={{
+        <div style={{ border: "1px solid black", background: "#e2f2f6" }}>  <div style={{
           color: "white", background: "#9ddcdc",
           marginBottom: "50px"
         }}>{count1}</div>
-          <div style={{ background: "white", border: "5px solid red", }}>
+          <div style={{  background: "#9ddcdc", border: "5px solid red", }}>
             <div style={{ display: "flex", flexDirection: "row" }}>   <input
               style={{
                 color: "black", background: "white", height:
@@ -55,13 +55,13 @@ export function Counter() {
             aria-label="Increment value"
             onClick={() => dispatch(colorchange())} >
             Increment by +10
-          </button></div>
+          </button>
           <button style={{ color: "blue", background: "green" }}
             aria-label="Decrement value"
             onClick={() => dispatch(colordecrement())}
           >
             Decrement by -5
-          </button>
+          </button></div>
         </div>
         <div style={{ border: "1px solid black" }}>
           <div style={{ color: "white", background: "#9ddcdc",  }}>{count}</div>
